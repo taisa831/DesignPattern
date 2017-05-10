@@ -4,7 +4,6 @@ require_once dirname(__FILE__) . '/../../framework/factory/DisplayFactory.php';
 
 class HtmlDisplayFactory extends DisplayFactory
 {
-
     public function createDisplay($char)
     {
         return new HtmlDisplay($char);
@@ -14,5 +13,5 @@ class HtmlDisplayFactory extends DisplayFactory
     {
         $this->displays[] = $display;
     }
-
 }
+
