@@ -10,6 +10,6 @@ class TextDisplay extends AbstractDisplay
 
     protected function footer()
     {
-        echo "\n=========footer==========\n";
+        echo "\n=========footer========\n";
     }
 }
