@@ -8,7 +8,8 @@ require_once dirname(__FILE__) . '/../framework/AbstractDisplay.php';
  * <footer>footer</footer>
  * と表示される用に作る
  */
-class HtmlDisplay extends AbstractDisplay {
+class HtmlDisplay extends AbstractDisplay
+{
 
     protected function header()
     {

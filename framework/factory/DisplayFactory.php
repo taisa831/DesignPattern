@@ -2,7 +2,10 @@
 
 abstract class DisplayFactory
 {
-    public function create($char) {
+    protected $displays = [];
+
+    public function create($char)
+    {
         $display = $this->createDisplay($char);
         $this->registerDisplay($display);
         return $display;
@@ -11,4 +14,11 @@ abstract class DisplayFactory
     abstract function createDisplay($char);
 
     abstract function registerDisplay(AbstractDisplay $display);
+
+    public function displayAll($count)
+    {
+        foreach ($this->displays as $display) {
+            $display->display($count);
+        }
+    }
 }

@@ -4,9 +4,9 @@ require_once dirname(__FILE__) . '/../../framework/factory/DisplayFactory.php';
 
 class HtmlDisplayFactory extends DisplayFactory
 {
-    private $displays = [];
 
-    public function createDisplay($char) {
+    public function createDisplay($char)
+    {
         return new HtmlDisplay($char);
     }
 
@@ -15,9 +15,4 @@ class HtmlDisplayFactory extends DisplayFactory
         $this->displays[] = $display;
     }
 
-    public function displayAll($count) {
-        foreach ($this->displays as $display) {
-            $display->display($count);
-        }
-    }
 }

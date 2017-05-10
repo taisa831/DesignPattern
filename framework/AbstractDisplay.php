@@ -1,6 +1,7 @@
 <?php
 
-abstract class AbstractDisplay {
+abstract class AbstractDisplay
+{
 
     private $char;
 
