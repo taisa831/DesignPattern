@@ -13,7 +13,10 @@ abstract class DisplayFactory
 
     abstract function createDisplay($char);
 
-    abstract function registerDisplay(AbstractDisplay $display);
+    function registerDisplay(AbstractDisplay $display)
+    {
+        $this->displays[] = $display;
+    }
 
     public function displayAll($count)
     {

@@ -8,9 +8,4 @@ class TextDisplayFactory extends DisplayFactory
     {
         return new TextDisplay($char);
     }
-
-    function registerDisplay(AbstractDisplay $display)
-    {
-        $this->displays[] = $display;
-    }
 }
